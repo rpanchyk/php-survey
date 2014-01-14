@@ -1,0 +1,23 @@
+.slider_container {
+    border: 0px solid #eee;
+    width: 100%;
+    /*height: 200px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_tape {
+    border: 0px solid pink;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+    left: 0px;
+}
+
+.slider_item {
+    border: 0px solid yellow;
+    width: 100%;
+    height: inherit;
+    float: left;
+}

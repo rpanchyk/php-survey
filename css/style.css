@@ -1,0 +1,124 @@
+﻿@CHARSET "utf-8";
+
+/*=== Overrride ===*/
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+body {
+	height: inherit;
+	margin: inherit;
+	padding: inherit;
+	background: url(../images/bg_002.jpg) repeat #555;
+}
+
+p {
+	text-indent: 20px;
+	margin-bottom: 10px;
+}
+
+a,a:visited {
+	text-decoration: underline;
+	color: #eee;
+	font-family: 'Verdana', Courier, mono;
+	font-size: 12px;
+	font-weight: none;
+}
+
+a:hover,a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+input[type=checkbox].css-checkbox {
+    display:none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:42px;
+    display:inline-block;
+    height:32px; 
+    line-height:32px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -32px;
+}
+
+label.css-label {
+    background-image:url(../images/cb.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*=== /Overrride ===*/
+
+.content {
+    
+}
+
+.slider_container {
+    font: 28px dincondensedcregular;
+    height: 600px;
+}
+
+.slider_tape {
+    height: 580px;
+}
+
+.slider_item {
+    background: url(../images/bp_web_50.png) repeat;
+    display: table;
+}
+
+.tape_border {
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+#slider_button_prev, #slider_button_next {
+    position: absolute;
+    height: 91px;
+}
+#slider_button_prev {
+    left: 100px;
+}
+#slider_button_next {
+    right: 100px;
+}
+
+.item_question {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.item_answer_outer_container {
+    width: 800px;
+    display: table;
+    margin: 0 auto;
+    height: 70%;
+}
+
+.item_answer_inner_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item_answer {
+    margin-top: 35px;
+}
+

@@ -1,78 +1,130 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml">
-<HEAD>
-	<meta http-equiv="Content-Language" content="ru" />
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<title>РЕФОРД</title>
-	<link type="text/css" rel="stylesheet" href="style.css" />
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/firetooltip/fttp.js"></script>
-</HEAD>
-<BODY Marginwidth=0 marginheight=0 leftmargin=0 topmargin=0 bgcolor="000000">
-<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="center" valign="top"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-      <tr>
-        <td width="200" height="100%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="50">&nbsp;</td>
-          </tr>
-          <tr>
-            <td height="213" align="right" valign="top" style="padding-right:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="60">&nbsp;</td>
-              </tr>
-              <tr>
-                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td align="right" class="style2">АЛ'ЯНС</td>
-                  </tr>
-                  <tr>
-                    <td align="right" class="style1">РЕФОРД</td>
-                  </tr>
-                </table></td>
-              </tr>
-            </table></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-          </tr>
-        </table></td>
-        <td width="179" height="100%" valign="top"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td height="50" style="background-image:url(images/line.png); background-repeat:repeat-y; background-position:center;">&nbsp;</td>
-          </tr>
-          <tr>
-            <td height="213" align="center" valign="middle"><img src="images/evir_logo.png" width="179" height="193" /></td>
-          </tr>
-          <tr>
-            <td height="100%" style="background-image:url(images/line.png); background-repeat:repeat-y; background-position:center; height:100%;">&nbsp;</td>
-          </tr>
-        </table></td>
-        <td height="100%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="50"><div style="text-align:right;">
-				<!-- FiretrotCounter :: start -->
-				<a href="http://trash.firetrot.com/firetrot.counter/stat.php" target="_blank">
-					<img src="http://trash.firetrot.com/firetrot.counter/out.php?u=<?=urlencode(base64_encode($_SERVER['REQUEST_URI']))?>&r=<?=@urlencode(base64_encode($_SERVER['HTTP_REFERER']))?>" border="0" />
-				</a>
-				<!-- FiretrotCounter :: end -->
-			</div></td>
-          </tr>
-          <tr>
-            <td height="213" align="left" valign="middle" class="style3" style="padding-left:10px;">ОПИТУВАННЯ</td>
-          </tr>
-          <tr>
-            <td align="left"><?php require_once 'config.inc.php'; require_once 'form.inc.php'; ?>            </td>
-          </tr>
-        </table></td>
-        <td width="200" height="100%">&nbsp;</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-</BODY>
-</HTML>
+﻿<!DOCTYPE html />
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <title>Survey</title>
+
+	<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/firetrot.slider.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/firetrot.slider.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <div class="slider_container">
+        <div class="tape_border"></div>
+        <div class="slider_tape">
+            <div class="slider_item">
+                <div class="item_question">Які цілі в грі Ви переслідуєте?</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q0[]" id="q0_0" value="a0" class="css-checkbox" /><label for="q0_0" class="css-label">Взаємодію між людьми та спілкування</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q0[]" id="q0_1" value="a1" class="css-checkbox" /><label for="q0_1" class="css-label">Просто витрачаю вільний час</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q0[]" id="q0_2" value="a2" class="css-checkbox" /><label for="q0_2" class="css-label">Хочу відобразити своє значення в суспільстві</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q0[]" id="q0_3" value="a3" class="css-checkbox" /><label for="q0_3" class="css-label">Хочу стати відомим гравцем</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q0[]" id="q0_4" value="a4" class="css-checkbox" /><label for="q0_4" class="css-label">Думаю заробляти ігрову валюту та продавати за реальні гроші</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Яке значення для Вас має мораль та культура в грі?</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q1[]" id="q1_0" value="a0" class="css-checkbox" /><label for="q1_0" class="css-label">Ніяке. Це лише гра</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q1[]" id="q1_1" value="a1" class="css-checkbox" /><label for="q1_1" class="css-label">Лише гра, однак хотілось би приділяти більше уваги моралі та культурі</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q1[]" id="q1_2" value="a2" class="css-checkbox" /><label for="q1_2" class="css-label">Велике значення, мораль повсюду, а гра - це лише сфера взаємодії між людьми</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Яке значення для Вас має "служіння благу"?</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q2[]" id="q2_0" value="a0" class="css-checkbox" /><label for="q2_0" class="css-label">Ніяке. Благородство в наш час застаріло, його ніхто не цінить</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q2[]" id="q2_1" value="a1" class="css-checkbox" /><label for="q2_1" class="css-label">Для мене це потреба душі, умова власного щастя</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q2[]" id="q2_2" value="a2" class="css-checkbox" /><label for="q2_2" class="css-label">Роблю добро, коли маю можливість. Але не стану ризикувати собою ради тих, кого не знаю</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Для Вас багатство - це</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q3[]" id="q3_0" value="a0" class="css-checkbox" /><label for="q3_0" class="css-label">Можливість отримувати все, чого бажаєш</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q3[]" id="q3_1" value="a1" class="css-checkbox" /><label for="q3_1" class="css-label">Для кожного своє, можна бути багатим, нічого не маючи</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q3[]" id="q3_2" value="a2" class="css-checkbox" /><label for="q3_2" class="css-label">Визнання серед інших</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q3[]" id="q3_3" value="a3" class="css-checkbox" /><label for="q3_3" class="css-label">Відчуття власної важливості</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Для Вас війна - це</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q4[]" id="q4_0" value="a0" class="css-checkbox" /><label for="q4_0" class="css-label">Самий простий спосіб вирішення проблеми</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q4[]" id="q4_1" value="a1" class="css-checkbox" /><label for="q4_1" class="css-label">Неминучі речі ігрового життя, це те, ради чого ми всі граємо</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q4[]" id="q4_2" value="a2" class="css-checkbox" /><label for="q4_2" class="css-label">Всього лише боязка втеча від проблем мирного часу</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q4[]" id="q4_3" value="a3" class="css-checkbox" /><label for="q4_3" class="css-label">Можливість керувати групою людей</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Для Вас добро - це</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q5[]" id="q5_0" value="a0" class="css-checkbox" /><label for="q5_0" class="css-label">Зробивши щось добре, це можливість безкарно творити зло</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q5[]" id="q5_1" value="a1" class="css-checkbox" /><label for="q5_1" class="css-label">Можливість керування людьми</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q5[]" id="q5_2" value="a2" class="css-checkbox" /><label for="q5_2" class="css-label">Активне використання здібностей душі людини відповідно до високої гідності або чесноти</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q5[]" id="q5_3" value="a3" class="css-checkbox" /><label for="q5_3" class="css-label">Речі, яких не вистачає в нашому сучасному світі</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Що ви зробите, якщо побачите результат несправедливості або ж причину, яка може стати результатом несправедливості?</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q6[]" id="q6_0" value="a0" class="css-checkbox" /><label for="q6_0" class="css-label">Якщо це мене не стосується, не втручатимуся в чужі справи, оскільки я не знаю всіх фактів і причин конфлікту</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q6[]" id="q6_1" value="a1" class="css-checkbox" /><label for="q6_1" class="css-label">Намагатимусь запобігти скоєнню несправедливості</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">Якщо вас хтось як-небудь обдурив або підставив і Ви вирішите помститися, чи підете ви на обман і зраду?</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q7[]" id="q7_0" value="a0" class="css-checkbox" /><label for="q7_0" class="css-label">Залежно від моїх втрат через те, що мене зрадили або обдурили</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q7[]" id="q7_1" value="a1" class="css-checkbox" /><label for="q7_1" class="css-label">Мститиму, поки не поверну те, що мені належить</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q7[]" id="q7_2" value="a2" class="css-checkbox" /><label for="q7_2" class="css-label">Ні, не піду. Кращий спосіб помститися, це довести, що матеріальні втрати для мене нічого не означають</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q7[]" id="q7_3" value="a3" class="css-checkbox" /><label for="q7_3" class="css-label">Мовчки зроблю висновки і більше не матиму справ з такою людиною</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div class="item_question">По якому шляху Ви підете в своєму розвитку в грі?</div>
+                <div class="item_answer_outer_container">
+                    <div class="item_answer_inner_container">
+                        <div class="item_answer"><input type="checkbox" name="q8[]" id="q8_0" value="a0" class="css-checkbox" /><label for="q8_0" class="css-label">Шукатиму сильних союзників. Сила і єдність – запорука успіху</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q8[]" id="q8_1" value="a1" class="css-checkbox" /><label for="q8_1" class="css-label">Шукатиму суспільство, яке відповідає моїм особистим принципам і інтересам</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q8[]" id="q8_2" value="a2" class="css-checkbox" /><label for="q8_2" class="css-label">Шукатиму суспільство, що цінує мораль і культуру</label></div>
+                        <div class="item_answer"><input type="checkbox" name="q8[]" id="q8_3" value="a3" class="css-checkbox" /><label for="q8_3" class="css-label">Шукатиму суспільство, в якому буде найлегше досягти бажаних цілей</label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="tape_border"></div>
+    </div>
+</div>
+
+<a id="slider_button_prev" href="#"><img src="images/arrow_prev_25.png" onmouseover="this.src='images/arrow_prev_75.png'" onmouseout="this.src='images/arrow_prev_25.png'" /></a>
+<a id="slider_button_next" href="#"><img src="images/arrow_next_25.png" onmouseover="this.src='images/arrow_next_75.png'" onmouseout="this.src='images/arrow_next_25.png'" /></a>
+
+</body>
+</html>
