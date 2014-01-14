@@ -10,7 +10,7 @@ ini_set('display_errors', E_ALL);
 $config = array();
 
 // General
-$config['web_path'] = '/survey';
+$config['web_path'] = '.';
 
 // SMTP
 $config['smtp']['server_host'] = 'smtp.freenet.com.ua';
